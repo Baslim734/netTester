@@ -21,6 +21,6 @@ import java.io.IOException;
 	FileWriter write = new FileWriter(path, append_to_file);
 	PrintWriter printh_line = new PrintWriter(write);
 	print_line.printf("%s" + "% n",textLine);
-	print_line.close();//some changes
+	print_line.close();//some changes undo
  }
 }
