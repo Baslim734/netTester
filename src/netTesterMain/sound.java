@@ -1,4 +1,4 @@
-package netTesterMain;
+package netTester;
 
 public class sound {
 
