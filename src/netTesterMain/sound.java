@@ -1,7 +1,9 @@
 //Author Kurkovskiy Danial
 
-package netTester;
+package netTesterMain;
 
 public class sound {
+
+//    какие то изменения
 
 }
