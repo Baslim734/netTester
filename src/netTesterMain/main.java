@@ -1,12 +1,13 @@
 package netTesterMain;
 import java.net.InetAddress;
-import java.io.FileWriter;
-import java.io.PrintWriter;
-import java.io.IOException;
+import java.util.Scanner;
 
 public class main {
 public static void main(String[] args){
 	FileWritter Newwrite = new FileWritter();
+    System.out.println("Darova ebat.Nazovi file s pytem:");
+    Scanner in = new Scanner(System.in);
+    String fileName = in.nextLine();
 	try{
 			InetAddress address = InetAddress.getByName("google.com");
             boolean reachable = address.isReachable(10000);
@@ -14,14 +15,13 @@ public static void main(String[] args){
             		{
                  Newwrite.writeFile("D:\\mylog.txt");
                  Newwrite.writeToFile("ALARM");
-            //	System.out.println("Darova ebat.Nazovi file:");
-            //	String file_name;
+
             		}
             else
             {
             System.out.println("Dostypno blyat!");
             }
-            Newwrite.writeFile("D:\\mylog.txt");
+            Newwrite.writeFile(fileName);
             Newwrite.writeToFile("Dostyp");
          // System.out.println("Is host reachable? " + reachable); not yet needed
         } catch (Exception e){

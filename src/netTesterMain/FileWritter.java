@@ -7,12 +7,12 @@ import java.io.IOException;
 	private String path;
 	private boolean append_to_file = false;
 	
- public void writeFile(String file_path) {
-	path = file_path;
+ public void writeFile(String filePath) {
+ 	path = filePath;
  }
 
- public void writeFile(String file_path, boolean append_value) {
-	path = file_path;
+ public void writeFile(String filePath, boolean append_value) {
+	path = filePath;
 	append_to_file = append_value;
  }
  
