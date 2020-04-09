@@ -12,8 +12,8 @@ import java.io.IOException;
  }
 
  public void writeFile(String file_path, boolean append_value) {
-	path = file_path;
-	append_to_file = append_value;
+	path = file_path;//путь и название файла (типа D:\mylog.txt)
+	append_to_file = append_value;// Если мы хотим перезаписать всё что есть в файле, ставим false
  }
  
  public void writeToFile(String textLine) throws IOException{
